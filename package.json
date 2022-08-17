@@ -1,0 +1,16 @@
+{
+  "name": "ext-clash-modifier",
+  "version": "0.0.0",
+  "devDependencies": {
+    "wrangler": "2.0.25"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "js-base64": "^3.7.2",
+    "js-yaml": "^4.1.0"
+  }
+}
