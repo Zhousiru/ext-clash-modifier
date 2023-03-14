@@ -2,7 +2,7 @@
   "name": "ext-clash-modifier",
   "version": "0.0.0",
   "devDependencies": {
-    "wrangler": "2.0.25"
+    "wrangler": "2.12.3"
   },
   "private": true,
   "scripts": {

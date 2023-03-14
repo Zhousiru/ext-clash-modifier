@@ -1,4 +1,9 @@
-const remove = ['proxy-groups', 'rules', 'rule-providers']
+// 指定需要在原有配置文件上删除的字段
+const remove = ["proxy-groups", "rules", "rule-providers"];
+
+// 指定需要需要追加的 YAML 配置，注意缩进
+// 在数组中，使用 `_PROXY_NAME` 指代所有的 Proxy Name
+// 在 Rule Provider 中的 URL 中，使用 `_PROVIDER_PROXY|` 指代规则文件代理 URL
 const append = `
 proxy-groups:
   - name: 🔯 代理模式
@@ -141,6 +146,6 @@ rule-providers:
     path: ./ruleset/applications.yaml
     interval: 86400
 
-`
+`;
 
-export default { remove, append }
+export default { remove, append };
