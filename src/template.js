@@ -75,9 +75,24 @@ proxy-groups:
       - 🔰 选择节点
 
 rules:
+  - DOMAIN-KEYWORD,cnki,DIRECT
+  - DOMAIN-SUFFIX,sharepoint.com,DIRECT
+  - DOMAIN-SUFFIX,edu.cn,DIRECT
+  - DOMAIN-KEYWORD,elsevier,DIRECT
+  - DOMAIN-KEYWORD,clarivate,DIRECT
+  - DOMAIN-KEYWORD,easyscholar.cc,DIRECT
+  - DOMAIN-KEYWORD,webofscience,DIRECT
+  - DOMAIN-KEYWORD,webofknowledge,DIRECT
+  - DOMAIN-SUFFIX,worldscientific.com,DIRECT
+  - DOMAIN-SUFFIX,teracloud.com,DIRECT
+  - DOMAIN-SUFFIX,nvidia.com,DIRECT       
+  - DOMAIN-SUFFIX,openai.com,PROXY
+  - DOMAIN-SUFFIX,live.com,PROXY
+  - DOMAIN-SUFFIX,bing.com,PROXY
+  - DOMAIN-SUFFIX,msn.cn,PROXY
+  - DOMAIN-SUFFIX,workers.dev,PROXY
+  - DOMAIN-SUFFIX,jsdelivr.net,PROXY
   - RULE-SET,applications,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,🛑 广告拦截
   - RULE-SET,icloud,DIRECT
