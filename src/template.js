@@ -13,29 +13,64 @@ proxy-groups:
       - 绕过大陆丨白名单(Whitelist)
   - name: 🔰 选择节点
     type: select
-    proxies: [DIRECT, _PROXY_NAME]
+    proxies: [AUTO丨SG 新加坡, DIRECT, AUTO丨TW 台湾, AUTO丨HK 香港, AUTO丨JP 日本, AUTO丨US 美国, AUTO丨NF 网飞, AUTO丨Chatgpt, MANUAL丨ALL 手动, MANUAL丨Others 其他]
+  - name: MANUAL丨ALL 手动
+    type: select
+    proxies: [_PROXY_NAME_ALL]
+  - name: MANUAL丨Others 其他
+    type: select
+    proxies: [_PROXY_NAME_OT]
+  - name: AUTO丨SG 新加坡
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 28800
+    proxies: [_PROXY_NAME_SG]
+  - name: AUTO丨HK 香港
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 28800
+    proxies: [_PROXY_NAME_HK]
+  - name: AUTO丨JP 日本
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 28800
+    proxies: [_PROXY_NAME_JP]
+  - name: AUTO丨US 美国
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 28800
+    proxies: [_PROXY_NAME_US]
+  - name: AUTO丨NF 网飞
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 28800
+    proxies: [_PROXY_NAME_NF]
+  - name: AUTO丨Chatgpt
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 28800
+    proxies: [_PROXY_NAME_CG]
+  - name: AUTO丨TW 台湾
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 28800
+    proxies: [_PROXY_NAME_TW]
   - name: 🛑 广告拦截
     type: select
     proxies:
-      - DIRECT
       - REJECT
+      - DIRECT
       - PROXY
   - name: 绕过大陆丨黑名单(GFWlist)
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 86400
+    type: select
     proxies:
       - DIRECT
   - name: 绕过大陆丨白名单(Whitelist)
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 86400
+    type: select
     proxies:
       - PROXY
   - name: PROXY
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 86400
+    type: select
     proxies:
       - 🔰 选择节点
 
