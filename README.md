@@ -40,3 +40,10 @@ https://<your-domain>/m/<base64-config-url>
 ## 注意事项
 
 `workers.dev` 已被墙，请使用自有域名。
+
+## Forks
+
+如果对规则有更多需求，不妨看看下面的这些 Forks
+
+- [按区域自动选择节点](https://github.com/wddxg/ext-clash-modifier) by wddxg
+- 欢迎提交 ヾ(^▽^*)))
