@@ -8,7 +8,7 @@
 
 运行于 Cloudflare Workers。
 
-策略来源于 [这个 Issue](https://github.com/Fndroid/clash_for_windows_pkg/issues/2193)
+策略来源于 [这个 Issue](https://web.archive.org/web/20231015024249/https://github.com/Fndroid/clash_for_windows_pkg/issues/2193)
 
 ## 部署
 
